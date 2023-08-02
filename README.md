@@ -6,7 +6,7 @@
 <br>
 
 <div align="center">
-   <a href="https://ahlam-alsaffarini.github.io/SignupForm/"> Demo 🔥🤍</a>
+   <a href="https://ahlam-alsaffarini.github.io/Expenses-chart-component/"> Demo 🔥🤍</a>
 </div>
 
 <div align="center">
