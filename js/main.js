@@ -7,11 +7,12 @@ setTimeout(() => {
 let chartItem = document.querySelectorAll(".chart-item");
 
 chartItem.forEach((item, index) => {
-  //first lets give cyen  color for certain day
+  //first lets give cyen color for current day
   let d = new Date();
-  if (item.querySelector("div").className === `${data[d.getDay()].day}`) {
-    item.querySelector(`.${data[d.getDay()].day} span`).style.backgroundColor =
-      "var(--Cyan)";
+  if (item.querySelector("div").className === `${data[d.getUTCDay()].day}`) {
+    item.querySelector(
+      `.${data[d.getUTCDay()].day} span`
+    ).style.backgroundColor = "var(--Cyan)";
   }
 
   //then for before content
