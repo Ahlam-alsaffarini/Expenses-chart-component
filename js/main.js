@@ -9,10 +9,11 @@ let chartItem = document.querySelectorAll(".chart-item");
 chartItem.forEach((item, index) => {
   //first lets give cyen color for current day
   let d = new Date();
-  if (item.querySelector("div").className === `${data[d.getUTCDay()].day}`) {
-    item.querySelector(
-      `.${data[d.getUTCDay()].day} span`
-    ).style.backgroundColor = "var(--Cyan)";
+  let day = d.getDay() == 0 ? 6 : d.getDay() - 1;
+  console.log(day);
+  if (item.querySelector("div").className === `${data[day].day}`) {
+    item.querySelector(`.${data[day].day} span`).style.backgroundColor =
+      "var(--Cyan)";
   }
 
   //then for before content
